@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarjeta Monjita Tricolor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="background-plants" aria-hidden="true">
+    <span class="plant plant-1"></span>
+    <span class="plant plant-2"></span>
+    <span class="plant plant-3"></span>
+    <span class="plant plant-4"></span>
+    <span class="plant plant-5"></span>
+    <span class="plant plant-6"></span>
+  </div>
+
+  <div class="scene">
+    <div class="pokemon-card" id="card">
+      <div class="card-zoom">
+        <div class="card-flip">
+
+          <div class="card-face card-front">
+            <div class="card-inner">
+              <div class="top-bar">
+                <div>
+                  <h1 class="species-name">Monjita Tricolor</h1>
+                  <div class="scientific-name">Lonchura malacca</div>
+                </div>
+                <div class="badge-type">INVASORA</div>
+              </div>
+
+              <div class="image-frame line-frame"></div>
+
+              <div class="info-box">
+                <div class="info-title">Dato curioso</div>
+                <p class="curious-fact">
+                  La monjita tricolor es un ave pequeñita que ama las semillas y casi siempre prefiere estar acompañada. Aunque se ve muy delicada, es muy hábil para adaptarse y encontrar lugares donde vivir.
+                </p>
+              </div>
+
+              <div class="audio-zone no-flip">
+                <h2 class="attack-title">Audio explicativo</h2>
+                <p class="attack-text">
+                  ¿Quieres escuchar el canto de la monjita tricolor? Presiona el botón para descubrirlo.
+                </p>
+                <button class="sound-btn no-flip" id="playSound">🎧 Escuchar sonido</button>
+              </div>
+
+              <div class="hold-indicator">Desliza la carta con el dedo para girarla</div>
+              <div class="footer-mini"></div>
+            </div>
+          </div>
+
+          <div class="card-face card-back">
+            <div class="back-inner">
+              <img
+                src="https://media.istockphoto.com/id/1362023934/tr/foto%C4%9Fraf/tricoloured-munia-lonchura-malacca-kolhapur-maharashtra-india.jpg?s=612x612&w=0&k=20&c=1ZtQmaXxLjzppfPsYRMjjrdaiFtO6YhueDi39fLuMMA="
+                alt="Monjita Tricolor"
+              />
+              <div class="back-overlay"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="speciesAudio" src="canto-de-la-mojinta.mp3"></audio>
+  <script src="magia.js"></script>
+</body>
+</html>
